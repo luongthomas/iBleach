@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.0.0",
+  "iOS" : [
+    {
+      "name" : "Hero",
+      "hash" : "6b15fe73f542341c74f69cf9439be077fd31ba23629437aca387b3d854c1944b"
+    }
+  ]
+}

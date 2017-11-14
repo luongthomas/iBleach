@@ -7,14 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242DED291FB68168003E9FF7 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242DED261FB68168003E9FF7 /* SnapKit.framework */; };
+		242DED2A1FB68168003E9FF7 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 242DED261FB68168003E9FF7 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		242DED2B1FB68168003E9FF7 /* SwiftGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242DED271FB68168003E9FF7 /* SwiftGif.framework */; };
+		242DED2C1FB68168003E9FF7 /* SwiftGif.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 242DED271FB68168003E9FF7 /* SwiftGif.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		242DED2D1FB68168003E9FF7 /* Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242DED281FB68168003E9FF7 /* Hero.framework */; };
+		242DED2E1FB68168003E9FF7 /* Hero.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 242DED281FB68168003E9FF7 /* Hero.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2456595D1FB6902000E1CC0F /* AImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2456595C1FB6902000E1CC0F /* AImage.swift */; };
+		245659611FB69AD200E1CC0F /* cat1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 245659601FB69AD200E1CC0F /* cat1.gif */; };
+		245659631FB69EE600E1CC0F /* Still.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 245659621FB69EE500E1CC0F /* Still.mp3 */; };
 		2487D0371FB6742F00578E5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487D0361FB6742F00578E5C /* AppDelegate.swift */; };
 		2487D0391FB6742F00578E5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487D0381FB6742F00578E5C /* ViewController.swift */; };
 		2487D03C1FB6742F00578E5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2487D03A1FB6742F00578E5C /* Main.storyboard */; };
 		2487D03E1FB6742F00578E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2487D03D1FB6742F00578E5C /* Assets.xcassets */; };
 		2487D0411FB6742F00578E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2487D03F1FB6742F00578E5C /* LaunchScreen.storyboard */; };
+		249F8DA01FB6A0F100B9D20C /* CuteMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 249F8D9F1FB6A0F100B9D20C /* CuteMusic.mp3 */; };
+		B68F3FD545BEF7F6A70EED96 /* Pods_iBleach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5989AD73E64992169E1F224 /* Pods_iBleach.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		242DED2F1FB68169003E9FF7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				242DED2A1FB68168003E9FF7 /* SnapKit.framework in Embed Frameworks */,
+				242DED2C1FB68168003E9FF7 /* SwiftGif.framework in Embed Frameworks */,
+				242DED2E1FB68168003E9FF7 /* Hero.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		242DED201FB67F3D003E9FF7 /* Hero.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hero.framework; path = Carthage/Build/iOS/Hero.framework; sourceTree = "<group>"; };
+		242DED211FB67F3D003E9FF7 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		242DED221FB67F3D003E9FF7 /* SwiftGif.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGif.framework; path = Carthage/Build/iOS/SwiftGif.framework; sourceTree = "<group>"; };
+		242DED261FB68168003E9FF7 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		242DED271FB68168003E9FF7 /* SwiftGif.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGif.framework; path = Carthage/Build/iOS/SwiftGif.framework; sourceTree = "<group>"; };
+		242DED281FB68168003E9FF7 /* Hero.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hero.framework; path = Carthage/Build/iOS/Hero.framework; sourceTree = "<group>"; };
+		2456595C1FB6902000E1CC0F /* AImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AImage.swift; sourceTree = "<group>"; };
+		245659601FB69AD200E1CC0F /* cat1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cat1.gif; sourceTree = "<group>"; };
+		245659621FB69EE500E1CC0F /* Still.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Still.mp3; sourceTree = "<group>"; };
 		2487D0331FB6742F00578E5C /* iBleach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBleach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2487D0361FB6742F00578E5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2487D0381FB6742F00578E5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +58,10 @@
 		2487D03D1FB6742F00578E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2487D0401FB6742F00578E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2487D0421FB6742F00578E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249F8D9F1FB6A0F100B9D20C /* CuteMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CuteMusic.mp3; sourceTree = "<group>"; };
+		3A7DE9DBDD789AD89FEF5488 /* Pods-iBleach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBleach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iBleach/Pods-iBleach.debug.xcconfig"; sourceTree = "<group>"; };
+		7CCE1912B7BA8CDFAC9DBAD3 /* Pods-iBleach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBleach.release.xcconfig"; path = "Pods/Target Support Files/Pods-iBleach/Pods-iBleach.release.xcconfig"; sourceTree = "<group>"; };
+		B5989AD73E64992169E1F224 /* Pods_iBleach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBleach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +69,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242DED2D1FB68168003E9FF7 /* Hero.framework in Frameworks */,
+				B68F3FD545BEF7F6A70EED96 /* Pods_iBleach.framework in Frameworks */,
+				242DED291FB68168003E9FF7 /* SnapKit.framework in Frameworks */,
+				242DED2B1FB68168003E9FF7 /* SwiftGif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		245659641FB69EF000E1CC0F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		2487D02A1FB6742F00578E5C = {
 			isa = PBXGroup;
 			children = (
+				245659641FB69EF000E1CC0F /* Assets */,
+				245659621FB69EE500E1CC0F /* Still.mp3 */,
+				249F8D9F1FB6A0F100B9D20C /* CuteMusic.mp3 */,
+				245659601FB69AD200E1CC0F /* cat1.gif */,
+				242DED281FB68168003E9FF7 /* Hero.framework */,
+				242DED261FB68168003E9FF7 /* SnapKit.framework */,
+				242DED271FB68168003E9FF7 /* SwiftGif.framework */,
 				2487D0351FB6742F00578E5C /* iBleach */,
 				2487D0341FB6742F00578E5C /* Products */,
+				F34F3FA0330F6F99C452F6EE /* Pods */,
+				9004F13675FB8CC6B88603D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +120,29 @@
 				2487D03D1FB6742F00578E5C /* Assets.xcassets */,
 				2487D03F1FB6742F00578E5C /* LaunchScreen.storyboard */,
 				2487D0421FB6742F00578E5C /* Info.plist */,
+				2456595C1FB6902000E1CC0F /* AImage.swift */,
 			);
 			path = iBleach;
+			sourceTree = "<group>";
+		};
+		9004F13675FB8CC6B88603D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				242DED201FB67F3D003E9FF7 /* Hero.framework */,
+				242DED211FB67F3D003E9FF7 /* SnapKit.framework */,
+				242DED221FB67F3D003E9FF7 /* SwiftGif.framework */,
+				B5989AD73E64992169E1F224 /* Pods_iBleach.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F34F3FA0330F6F99C452F6EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A7DE9DBDD789AD89FEF5488 /* Pods-iBleach.debug.xcconfig */,
+				7CCE1912B7BA8CDFAC9DBAD3 /* Pods-iBleach.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +152,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2487D0451FB6742F00578E5C /* Build configuration list for PBXNativeTarget "iBleach" */;
 			buildPhases = (
+				8B3FC358EC571B60880E72C6 /* [CP] Check Pods Manifest.lock */,
 				2487D02F1FB6742F00578E5C /* Sources */,
 				2487D0301FB6742F00578E5C /* Frameworks */,
 				2487D0311FB6742F00578E5C /* Resources */,
+				737F23A628E1F3571868A01C /* [CP] Embed Pods Frameworks */,
+				C21376D5CAAE33DF27C7F1A0 /* [CP] Copy Pods Resources */,
+				242DED171FB6789C003E9FF7 /* ShellScript */,
+				242DED2F1FB68169003E9FF7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,18 +210,89 @@
 			buildActionMask = 2147483647;
 			files = (
 				2487D0411FB6742F00578E5C /* LaunchScreen.storyboard in Resources */,
+				249F8DA01FB6A0F100B9D20C /* CuteMusic.mp3 in Resources */,
 				2487D03E1FB6742F00578E5C /* Assets.xcassets in Resources */,
+				245659611FB69AD200E1CC0F /* cat1.gif in Resources */,
+				245659631FB69EE600E1CC0F /* Still.mp3 in Resources */,
 				2487D03C1FB6742F00578E5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		242DED171FB6789C003E9FF7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 129d0d0d7c27e929398b52bdc669e21dbb1f2bc5 77fdc9db12b443018b0cb6a8aee1dfae04f36337f847dd16b460ae4e3a7e03c7";
+		};
+		737F23A628E1F3571868A01C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iBleach/Pods-iBleach-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBleach/Pods-iBleach-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B3FC358EC571B60880E72C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iBleach-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C21376D5CAAE33DF27C7F1A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBleach/Pods-iBleach-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2487D02F1FB6742F00578E5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2456595D1FB6902000E1CC0F /* AImage.swift in Sources */,
 				2487D0391FB6742F00578E5C /* ViewController.swift in Sources */,
 				2487D0371FB6742F00578E5C /* AppDelegate.swift in Sources */,
 			);
@@ -272,11 +429,17 @@
 		};
 		2487D0461FB6742F00578E5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A7DE9DBDD789AD89FEF5488 /* Pods-iBleach.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3U6CEW26C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iBleach/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.modalApps.iBleach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +450,17 @@
 		};
 		2487D0471FB6742F00578E5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CCE1912B7BA8CDFAC9DBAD3 /* Pods-iBleach.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3U6CEW26C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iBleach/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.modalApps.iBleach;
 				PRODUCT_NAME = "$(TARGET_NAME)";

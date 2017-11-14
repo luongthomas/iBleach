@@ -1,0 +1,6 @@
+framework module Pods_iBleach {
+  umbrella header "Pods-iBleach-umbrella.h"
+
+  export *
+  module * { export * }
+}
