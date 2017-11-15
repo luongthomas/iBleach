@@ -10,6 +10,8 @@ target 'iBleach' do
   pod 'Crashlytics'
   pod 'Fabric'
   pod 'LGButton'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
 
 end

@@ -10,10 +10,14 @@ import UIKit
 import SnapKit
 import AVFoundation
 import LGButton
+import Alamofire
+import SwiftyJSON
 
 var backgroundMusic: AVAudioPlayer?
 
 class ViewController: UIViewController {
+    
+    var imageCount = -1
     
     let bgImage: UIImage = {
         let background = UIImage(named: "fluffy1.jpg")!
@@ -41,10 +45,18 @@ class ViewController: UIViewController {
         button.borderWidth = 2
         button.shadowOffset = CGSize(width: 3, height: 3)
     
-
+        button.addTarget(self, action: #selector(requestGif), for: .touchUpInside)
         return button
     }()
     
+    let gifFrame: AImageView = {
+        let frame = CGRect(x: 0, y: 0, width: 500, height: 300)
+        let imageView = AImageView(frame: frame)
+        imageView.layer.borderColor = UIColor.black.cgColor
+        imageView.layer.borderWidth = 5.0
+        imageView.layer.zPosition = 4
+        return imageView
+    }()
     
     
     override func viewDidLoad() {
@@ -71,21 +83,17 @@ class ViewController: UIViewController {
             make.center.equalToSuperview()
         }
         
-        let frame = CGRect(x: 0, y: 0, width: 500, height: 300)
-        let imageView = AImageView(frame: frame)
-        imageView.layer.borderColor = UIColor.black.cgColor
-        imageView.layer.borderWidth = 5.0
-        imageView.layer.zPosition = 4
-        self.view.addSubview(imageView)
-        imageView.snp.makeConstraints { (make) in
+        
+        self.view.addSubview(gifFrame)
+        gifFrame.snp.makeConstraints { (make) in
             make.center.equalToSuperview()
             make.size.equalTo(300)
         }
         
         if let filepath = Bundle.main.url(forResource: "cat1", withExtension: "gif") {
             let image = AImage(url: filepath)
-            imageView.add(image: image!)
-            imageView.play = true
+            gifFrame.add(image: image!)
+            gifFrame.play = true
         } else {
             print("file couldn't not be found")
         }
@@ -95,13 +103,43 @@ class ViewController: UIViewController {
         nextButton.layer.zPosition = 5
         nextButton.snp.makeConstraints { (make) in
             make.bottom.equalToSuperview().offset(-50)
-            make.left.equalTo(imageView.snp.left)
-            make.right.equalTo(imageView.snp.right)
+            make.left.equalTo(gifFrame.snp.left)
+            make.right.equalTo(gifFrame.snp.right)
             make.height.equalTo(100)
 //            make.size.lessThanOrEqualTo(200)
         }
     }
 
+    
+    @objc func requestGif() {
+        let parameters: Parameters = [
+            "key": "T6XI94ILBVUG",
+            "q": "cute animals"
+        ]
+        
+        let url = "https://api.tenor.com/v1/search"
+        
+        Alamofire.request(url, method: .get, parameters: parameters).validate().responseJSON { response in
+            self.imageCount += 1
+            
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                guard let url = json["results"][self.imageCount]["media"][0]["gif"]["url"].url else { return }
+                print(url)
+                let image = AImage(url: url)
+                self.gifFrame.add(image: image!)
+                self.gifFrame.play = true
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+        
+        
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
